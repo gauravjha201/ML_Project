@@ -15,7 +15,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path = os.path.join("artifacts", "preprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join("artifacts","preprocessor.pkl")
 
 
 class DataTransformation:
@@ -57,7 +57,7 @@ class DataTransformation:
                 ]
             )
 
-            return preprocessing  # 🔥 THIS FIXES THE ERROR
+            return preprocessing  
 
         except Exception as e:
             raise CustomException(e, sys)
