@@ -99,6 +99,7 @@ class ModelTrainer:
                 y_test=y_test,
                 models=models,
                 param=params 
+                
             )
 
             best_model_score = max(model_report.values())
