@@ -99,12 +99,13 @@ class ModelTrainer:
                 y_test=y_test,
                 models=models,
                 param=params 
-                
+
             )
 
             best_model_score = max(model_report.values())
             best_model_name = list(model_report.keys())[
                 list(model_report.values()).index(best_model_score)
+                
             ]
 
             best_model = models[best_model_name]
