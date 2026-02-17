@@ -123,6 +123,7 @@ class ModelTrainer:
             )
 
 
+
             predicted = best_model.predict(X_test)
             score = r2_score(y_test, predicted)
 
