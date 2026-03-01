@@ -22,6 +22,7 @@ class DataTransformation:
     def __init__(self):
         self.data_transformation_config = DataTransformationConfig()
 
+
     def get_data_transformer_object(self):
         try:
             numerical_columns = ["reading_score", "writing_score"]
