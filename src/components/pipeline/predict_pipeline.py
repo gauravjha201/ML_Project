@@ -102,6 +102,7 @@ class CustomData:
         reading_score: int,
         writing_score: int,
     ):
+        
         self.gender = gender
         self.race_ethnicity = race_ethnicity
         self.parental_level_of_education = parental_level_of_education
